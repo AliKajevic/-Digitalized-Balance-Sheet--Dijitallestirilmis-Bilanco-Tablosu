@@ -1,37 +1,36 @@
-Uygulamanın Genel Açıklaması
-Bu uygulama, bir şirketin bilançosunu hazırlamak veya incelemek için kullanılan bir arayüzdür. Bilanço, şirketin belirli bir tarihteki Varlıklarını (Aktif) ve bu varlıkların finansman kaynaklarını gösteren Yükümlülükler (Pasif) ve Özkaynaklarını listeler.
+# Bilanço Tablosu ve Finansal Analiz Arayüzü
 
-Ekranın üst kısmında İşletme Adı ve Tarih (YYYY-MM-DD) gibi temel bilgilerin girilebileceği alanlar bulunmaktadır.
+Bu proje, bir işletmenin finansal durumunu özetleyen temel bir muhasebe raporu olan **Bilançonun** oluşturulması, görüntülenmesi ve analizi için tasarlanmış bir kullanıcı arayüzüdür.
 
+## Temel İşlevler
 
-AKTİF (Varlıklar)
+Uygulama, bir şirketin belirli bir tarihteki **Varlıklarını (Aktif)** ve bu varlıkların finansman kaynaklarını gösteren **Yükümlülükler (Pasif) ve Özkaynaklarını** listeler ve denetler.
 
-Bu bölüm, şirketin sahip olduğu ve ekonomik fayda sağlaması beklenen değerleri gösterir. Kendi içinde iki ana kategoriye ayrılır:
+### 1. AKTİF (Varlıklar)
 
-Dönen Varlıklar: Bir yıl veya daha kısa sürede nakde çevrilmesi veya tüketilmesi beklenen varlıklardır (örneğin: Nakit ve Nakit Benzerleri, Ticari Alacaklar, Stoklar).
+İşletmenin sahip olduğu ekonomik değerleri listeler.
 
-Duran Varlıklar: Bir yıldan daha uzun süre işletme faaliyetlerinde kullanılacak veya elde tutulacak varlıklardır (örneğin: Finansal Varlıklar, İştirakler, Maddi Duran Varlıklar).
+* **Dönen Varlıklar:** Bir yıl içinde nakde çevrilmesi beklenen kalemler (Nakit, Ticari Alacaklar, Stoklar vb.).
+* **Duran Varlıklar:** Bir yıldan uzun süre işletmede kalacak varlıklar (Finansal Varlıklar, Tesisler, İştirakler vb.).
 
+### 2. PASİF (Yükümlülükler ve Özkaynaklar)
 
+İşletmenin varlıklarını finanse ettiği kaynakları listeler.
 
-PASİF (Yükümlülükler ve Özkaynaklar)
+* **Kısa Vadeli Yükümlülükler:** Bir yıl içinde ödenmesi gereken borçlar (Ticari Borçlar, Kısa Vadeli Kredi vb.).
+* **Uzun Vadeli Yükümlülükler:** Bir yıldan uzun vadede ödenecek borçlar.
+* **Özkaynaklar:** İşletme sahiplerinin (ortakların) net hakkı (Sermaye, Kâr/Zarar, Yedekler).
 
-Bu bölüm, şirketin varlıklarını finanse etmek için kullandığı kaynakları gösterir. Kendi içinde üç ana kategoriye ayrılır:
+## Kullanım Amacı
 
-Kısa Vadeli Yükümlülükler: Bir yıl veya daha kısa sürede ödenmesi gereken borçlardır (örneğin: Finansal Borçlar, Ticari Borçlar).
+* **Finansal Durum Raporlama:** Belirli bir tarihte şirketin mali yapısını anlık olarak görme.
+* **Bilanço Dengesi Kontrolü:** **Aktif Toplamı** ile **Pasif Toplamının** (Varlıklar = Kaynaklar) otomatik olarak karşılaştırılması ve dengenin sağlanması.
+* **Veri Girişi ve Güncelleme:** Gerekli tüm hesap kalemlerine ait tutarların (görüntüdeki '0' yazan alanlar) girilmesini/güncellenmesini sağlar.
 
-Uzun Vadeli Yükümlülükler: Bir yıldan daha uzun sürede ödenmesi gereken borçlardır.
+## Ek Özellikler
 
-Özkaynaklar: İşletme sahiplerinin (ortakların) varlıklar üzerindeki net hakkını gösterir (Ödenmiş Sermaye, Yedekler, Dönem Net Kârı/Zararı gibi kalemler bu kategoride yer alır ancak bazı alt başlıkları bu ekran görüntüsünde "Pasif" altında listelenmiştir).
+* **Tarih ve İşletme Bilgisi Girişi:** Raporun ait olduğu dönemi ve işletmeyi belirtme.
+* **Dışa Aktarma/Kaydetme Fonksiyonları:** Verilerin **Excel**, **JSON** formatlarında dışa aktarılması ve sistemde kaydedilmesi (`Kaydet` butonları).
+* **Doğrulama:** Bilanço ilkelerinin (denge dahil) kontrol edilmesi.
 
-
-
-Ek Özellikler
-
-Ekranın altında, raporun sonuçlarını gösteren ve çeşitli işlevleri içeren bir bölüm bulunmaktadır:
-
-Aktif (Varlıklar) Toplamı ve Pasif (Kaynaklar) Toplamı: Bir bilançoda bu iki toplamın her zaman birbirine eşit olması gerekir (Aktifler = Pasifler + Özkaynaklar).
-
-Fonksiyon Tuşları: Raporu farklı formatlarda dışa aktarmak (Excel, JSON, Kaydet) ve doğrulamak için butonlar mevcuttur.
-
-Özetle, bu arayüz, bir şirketin finansal resmini çıkarmak için gerekli tüm bilanço hesap kalemlerinin değerlerinin girildiği veya otomatik olarak hesaplanıp görüntülendiği bir finansal raporlama aracıdır.
+Bu uygulama, muhasebe süreçlerinde şeffaflığı ve finansal raporlamanın standartlara uygunluğunu sağlamayı amaçlar.
