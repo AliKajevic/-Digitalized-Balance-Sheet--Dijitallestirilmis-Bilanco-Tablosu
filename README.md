@@ -34,3 +34,6 @@ Uygulama, bir şirketin belirli bir tarihteki **Varlıklarını (Aktif)** ve bu 
 * **Doğrulama:** Bilanço ilkelerinin (denge dahil) kontrol edilmesi.
 
 Bu uygulama, muhasebe süreçlerinde şeffaflığı ve finansal raporlamanın standartlara uygunluğunu sağlamayı amaçlar.
+
+<img width="1920" height="1039" alt="image" src="https://github.com/user-attachments/assets/d67b84db-8e5b-4872-8a89-eb96671a1982" />
+
